@@ -26,6 +26,6 @@
 +     Admins can add, edit, and delete FAQ categories
 -     Admins can add, edit, and delete FAQ question and answer pairs
 +     Every visitor of the website can view the FAQ page(s)
--   Contact page
--     Visitors can fill out a contact form
--     The content of submitted forms will be sent to the administrators
++   Contact page
++     Visitors can fill out a contact form
++     The content of submitted forms will be sent to the administrators

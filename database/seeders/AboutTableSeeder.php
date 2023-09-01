@@ -45,5 +45,9 @@ class AboutTableSeeder extends Seeder
             'resource' => 'Auth',
             'link' => 'https://laravel.com/docs/10.x/authentication',
         ]);
+        DB::table('about')->insert([
+            'resource' => 'GitHub',
+            'link' => 'https://github.com/lolpowerluke/Backend_Project',
+        ]);
     }
 }

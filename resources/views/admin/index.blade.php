@@ -32,6 +32,11 @@
                             <span class="card-title">Categories</span>
                         </div>
                     </div>
+                    <div class="card" onclick="window.location.href='/admin/contactforms';">
+                        <div class="card-body">
+                            <span class="card-title">Contact Forms</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

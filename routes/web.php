@@ -9,6 +9,7 @@ use App\Http\Controllers\QuestionsController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\CategorieController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ContactformController;
 
 /*
 |--------------------------------------------------------------------------
@@ -78,6 +79,10 @@ Route::get('/admin/searchCategoriesToRemove', [AdminController::class, 'searchCa
 Route::get('/admin/searchToAddToCategory', [AdminController::class, 'searchToAddToCategory'])->name('admin.searchToAddToCategory');
 
 Route::get('/admin/searchQuestionsToRemove', [AdminController::class, 'searchQuestionsToRemove'])->name('admin.searchQuestionsToRemove');
+
+Route::get('/admin/contactforms', [AdminController::class, 'contactforms'])->name('admin.contactforms');
+
+Route::resource('contactform', ContactformController::class);
 
 Auth::routes();
 

@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\News;
 use App\Models\Question;
 use App\Models\Categorie;
+use App\Models\Contactform;
 
 class AdminController extends Controller
 {
@@ -214,5 +215,12 @@ class AdminController extends Controller
         $categorie = Categorie::find($id);
         $categorie->delete();
         return redirect()->route('admin.searchCategoriesToRemove')->with('status', 'Category deleted!');
+    }
+    public function contactforms() {
+        if(!auth()->user()->admin) {
+            return redirect()->route('news.index')->with('status', '403 | You are not allowed to access this page!');
+        }
+        $contactforms = Contactform::all();
+        return view('admin.contactforms', compact('contactforms'));
     }
 }

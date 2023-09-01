@@ -25,7 +25,7 @@ class ContactformController extends Controller
      */
     public function create()
     {
-        //
+        return view('contactform.create');
     }
 
     /**
@@ -33,7 +33,20 @@ class ContactformController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //validate the data
+        $validated = $request->validate([
+            'title' => 'required|max:255',
+            'email' => 'required|email|max:255',
+            'content' => 'required|max:255',
+        ]);
+        //store in the database
+        $contactform = new contactform();
+        $contactform->title = $validated['title'];
+        $contactform->email = $validated['email'];
+        $contactform->content = $validated['content'];
+        $contactform->save();
+
+        return redirect()->route('news.index')->with('status', 'Your message has been sent!');
     }
 
     /**

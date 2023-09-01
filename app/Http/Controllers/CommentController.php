@@ -22,7 +22,6 @@ class CommentController extends Controller
         $comment->user_id = Auth::id();
         $comment->content = $validated['content'];
         $comment->question_id = $validated['question_id'];
-
         $comment->save();
       
         return redirect()->route('question.show', $validated['question_id'])->with('status', 'Comment created!');

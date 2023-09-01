@@ -16,14 +16,14 @@ class ContactformsTableSeeder extends Seeder
         DB::table('contactforms')->insert([
             'title' => 'Contact Form',
             'email' => 'user@ehb.be',
-            'message' => 'This is a test message',
+            'content' => 'This is a test message',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
         DB::table('contactforms')->insert([
             'title' => 'Contact Form 2',
             'email' => 'lukas@gmail.com',
-            'message' => 'This is a test message 2',
+            'content' => 'This is a test message 2',
             'created_at' => now(),
             'updated_at' => now(),
         ]);

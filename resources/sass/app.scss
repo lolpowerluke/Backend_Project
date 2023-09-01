@@ -291,3 +291,8 @@ div.profile-image {
     border-radius: var(--bs-border-radius);
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.contactform .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
