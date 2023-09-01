@@ -1,0 +1,44 @@
+Views
++   You will at least have an "about" page. This is a static view that will serve as your Readme/list of sources. Cite any resources that you've used in this page, as well as a link to those pages. This page is mandatory, if your about page does not exist, you will not be able to pass for this project.
++   Use at least 2 layouts (think about maybe splitting up the 'public' website and the admin panel)
+-   Use partials where logical
+-   Use the techniques we've seen during the exercises:
++     Control structures
+-     XSS protection
++     CSRF protection
++     Client-side validation
+
+Routes
++   All routes use controller methods
++   All routes use logical middleware
++   If possible, group the routes where needed
+
+Controller
++   Use several controllers to split your logic
++   Think back to resource controllers for CRUD operations
+
+Models
+Use Eloquent models
++   Add relationships where needed
++     At least 1 one-to-many
++     At least 1 many-to-many
+
+Database
++   Your database needs to be created using migration files
++   Add seeders to have some "dummy" data
++   I will run "php artisan migrate:fresh --seed" on every project. After running this your website should be usable for me
+
+Authentication
+-   Default functionality for authentication
++     Log in/out
++     'Remember me'
++     Register
+-     Forgot password
+-     Change password
++   Add 1 default admin with a seeder
++     Username: admin
++     Email: admin@ehb.be
++     Password: Password!321
+
++   Theming/styles
++     Provide some default styling for your website. Even though design is not a core competence of this course, I expect a minimum. If you are not good at design, use something like Bootstrap and pick a free theme from a website such as https://startbootstrap.com/Links to an external site.

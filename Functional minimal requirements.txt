@@ -1,0 +1,31 @@
+-   Login system
++     Users can log in
++     Visitors can create a new account
++     Users may or may not be an administrator
++     Only an administrator can promote another user to administrator status 
+-       (or create a new user that is an admin)
++   Profile pagina
++     Each user has their own publicly available profile page
++     A user can edit their own user data
++     The information shown is at least
++       Username
++       Birthday
++       Avatar
++	      (that can be uploaded and saved on the webserver)
++	  Short 'about me' biography 
++   Latest news
++     Admins can add, edit, and delete news items
++     Every visitor of the website can view the news posts
++       These news items have at least the following:
++         Title
++         Cover image
++         Content
++         Publishing date
+-   FAQ page
++     There is a list of questions and answers, grouped by categories
++     Admins can add, edit, and delete FAQ categories
+-     Admins can add, edit, and delete FAQ question and answer pairs
++     Every visitor of the website can view the FAQ page(s)
+-   Contact page
+-     Visitors can fill out a contact form
+-     The content of submitted forms will be sent to the administrators

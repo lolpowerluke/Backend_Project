@@ -1,0 +1,8 @@
+-  Admins can reply to the submitted contact forms through the admin panel, the replies will be mailed to the original sender
++  Users can leave comments on news posts
++  Users can pose questions
++    might be added to the FAQ
++  Admins can add answers to the posed FAQ questions
+-    through the admin panel
++  Basic forum: Users can create threads, other users can leave replies
+-  Online ordering: A customer can (with or without being logged in) place an order for the products available on the website
