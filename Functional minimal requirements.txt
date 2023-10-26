@@ -16,7 +16,7 @@
 +   Latest news
 +     Admins can add, edit, and delete news items
 +     Every visitor of the website can view the news posts
-+       These news items have at least the following:
++       These news items have at least the following
 +         Title
 +         Cover image
 +         Content
